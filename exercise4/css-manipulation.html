@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+
+<html>
+    <head>
+        <title>Dynamic Styles</title>
+    </head>
+
+    <body>
+        <h1>Dynamic Style Manipulation</h1>
+        <p id="target" style="border-style:solid; margin:20px; padding:20px">
+            Hello there. To be completely honest, this text is just a filler to get to the pinnacle of programming experience: 
+            the ability to dynamically color and resize HTML elements. So go ahead and fill in the text fields below to witness
+            absolute magic.
+        </p>
+        <h3>Instructions:</h3>
+        <ul>
+            <li>For the color fields, input a value from 0-255 for each color corresponding to the desired intensity of that color.</li>
+            <li>For the width field, input the number of pixels you which to make the border</li>
+            <li>Hit the 'Submit' button when satisfied.</li>
+        </ul>
+            
+        <h4>Border:</h4>
+        Red: <input type="text" id="border-red" value="0"><br>
+        Green: <input type="text" id="border-green" value="0"><br>
+        Blue: <input type="text" id="border-blue" value="0"><br>
+        Width: <input type="text" id="border-width" value="3">
+
+        <h4>Background:</h4>
+        Red: <input type="text" id="bg-red" value="255"><br>
+        Green: <input type="text" id="bg-green" value="255"><br>
+        Blue: <input type="text" id="bg-blue" value="255">
+        <br>
+        <br>
+        <input type="submit" onclick="updateAll()" value="Submit">
+        <br>
+        <br>
+        <h4 id="error-header" style="display:none;color:red">Input Errors:</h4>
+        <ul>
+            <li id="border-color-error" style="display:none;color:red">Invalid Border Color Input</li>
+            <li id="border-width-error" style="display:none;color:red">Invalid Border Width Input</li>
+            <li id="bg-color-error" style="display:none;color:red">Invalid Background Color Input</li>
+        </ul>
+
+        <script type="text/javascript" src="update-view.js"></script>
+    </body>
+</html>

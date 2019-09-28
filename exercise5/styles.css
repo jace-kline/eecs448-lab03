@@ -1,0 +1,53 @@
+
+body {
+    font-family: Arial;
+    background-image: linear-gradient(to right, red , blue);
+    text-shadow:
+		-2px -2px 0 #000,
+		2px -2px 0 #000,
+		-2px 2px 0 #000,
+		2px 2px 0 #000;
+}
+
+a {
+    text-decoration: none;
+    color: white;
+}
+
+
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+#main-header {
+    text-align: center;
+    font-size: 50pt;
+    color: white;
+}
+
+#menu-wrap {
+    width: 50%;
+    margin: auto;
+}
+
+#menu {
+    font-size: 30pt;
+    text-align: center;
+}
+
+.menu-opt {
+    background-image: linear-gradient(to left, red, orange);
+    border-style: solid;
+    border-color: black;
+    margin: 20px;
+    padding: 20px;
+}
+
+.menu-opt:hover {
+    border-style: double;
+    border-width: 5px;
+    border-color: white;
+    font-size: 32pt;
+}
